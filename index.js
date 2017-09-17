@@ -3,7 +3,7 @@ module.exports = {
   setup: function (sceneFile) {
     const body = document.querySelector('body');
     if (!window.__html__[sceneFile]) {
-      console.console.error('File ' + sceneFile + ' not found by html2js' +
+      console.error('File ' + sceneFile + ' not found by html2js' +
           'loader. Check karma.conf.js settings for files and preprocessors');
     }
     body.innerHTML = window.__html__[sceneFile] + body.innerHTML;

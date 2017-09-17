@@ -27,10 +27,28 @@
   },
   "homepage": "https://github.com/wmurphyrd/aframe-machinima-testing#readme",
   "peerDependencies": {
-    "aframe-motion-capture-components": "^0.1.6",
+    "aframe": ">=0.6.0",
+    "aframe-motion-capture-components": "0.1.6",
     "budo": "^8.2.2",
+    "chai": "^3.5.0",
     "karma": "^1.4.0",
     "karma-html2js-preprocessor": "^1.1.0",
-    "mocha": "^3.0.2"
+    "karma-browserify": "^5.1.0",
+    "karma-chrome-launcher": "^2.0.0",
+    "karma-firefox-launcher": "^1.0.0",
+    "karma-html2js-preprocessor": "^1.1.0",
+    "karma-mocha": "^1.1.1",
+    "karma-mocha-reporter": "^2.1.0",
+    "karma-sinon-chai": "^1.2.4",
+    "mocha": "^3.0.2",
+    "sinon": "^2.1.0",
+    "sinon-chai": "^2.8.0"
+  },
+  "dependencies": {
+    "glob": "^7.1.2",
+    "shelljs": "^0.7.8"
+  },
+  "bin": {
+    "machinima-bootstrap": "./bin/machinima-bootstrap.js"
   }
 }
