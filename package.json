@@ -1,0 +1,36 @@
+{
+  "name": "aframe-machinima-testing",
+  "version": "0.0.1",
+  "description": "Utilities for automated functional testing in A-Frame scenes and components",
+  "main": "index.js",
+  "scripts": {
+    "test": "karma start ./tests/karma.conf.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/wmurphyrd/aframe-machinima-testing.git"
+  },
+  "keywords": [
+    "A-Frame",
+    "WebVR",
+    "test",
+    "functional",
+    "utility",
+    "aframe",
+    "aframevr",
+    "machinima"
+  ],
+  "author": "Will Murphy",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/wmurphyrd/aframe-machinima-testing/issues"
+  },
+  "homepage": "https://github.com/wmurphyrd/aframe-machinima-testing#readme",
+  "peerDependencies": {
+    "aframe-motion-capture-components": "^0.1.6",
+    "budo": "^8.2.2",
+    "karma": "^1.4.0",
+    "karma-html2js-preprocessor": "^1.1.0",
+    "mocha": "^3.0.2"
+  }
+}
