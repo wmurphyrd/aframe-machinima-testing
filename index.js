@@ -37,16 +37,14 @@ module.exports = {
         .setAttribute('avatar-replayer', 'src:' + recordingFile);
   },
   testEnd: function (callback) {
-    function callbackWrapper (e) {
-      var replayer = document.querySelector('a-scene') &&
-          document.querySelector('a-scene').components &&
-          document.querySelector('a-scene').components['avatar-replayer'];
-      if (callback) { callback(e); }
-      // replayer needs a little help cleaning up neatly
-      if (replayer) { replayer.isReplaying = false; }
-    }
     document.querySelector('a-scene')
-        .addEventListener('replayingstopped', callbackWrapper, { once: true });
+        .addEventListener('replayingstopped', callback, { once: true });
         // set event callback with 'once' flag due to multiple event emmisions
+  },
+  teardown: function () {
+    var replayer = document.querySelector('a-scene') &&
+        document.querySelector('a-scene').components &&
+        document.querySelector('a-scene').components['avatar-replayer'];
+    if (replayer) { replayer.isReplaying = false; }
   }
 };
