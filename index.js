@@ -8,7 +8,7 @@ module.exports = {
     }
     body.innerHTML = window.__html__[sceneFile] + body.innerHTML;
   },
-  test: function (description, recordingFile, preReplay, postReplay, only) {
+  test: function (description, recordingFile, postReplay, preReplay, only) {
     var mach = this;
     var postCallback;
     var testFunc = function (done) {
