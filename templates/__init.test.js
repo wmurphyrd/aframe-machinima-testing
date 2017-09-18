@@ -6,7 +6,7 @@ var machinima = require('aframe-machinima-testing');
 window.debug = true;
 
 setup(function () {
-  if (sinon) { this.sinon = sinon.sandbox.create(); }
+  this.sinon = sinon.sandbox.create();
 });
 
 teardown(function () {
@@ -18,5 +18,5 @@ teardown(function () {
   for (var i = 0; i < els.length; i++) {
     els[i].parentNode.removeChild(els[i]);
   }
-  if (this.sinon) { this.sinon.restore(); }
+  this.sinon.restore();
 });
