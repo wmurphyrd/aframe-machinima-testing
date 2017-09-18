@@ -10,7 +10,7 @@ setup(function () {
 });
 
 teardown(function () {
-  machinima.teardown();
+  machinima.teardownReplayer();
   // Clean up any attached elements.
   const attachedEls = ['canvas', 'a-assets', 'a-scene'];
   var els = document.querySelectorAll(attachedEls.join(','));

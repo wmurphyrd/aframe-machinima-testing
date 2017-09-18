@@ -5,7 +5,7 @@ const machinima = require('aframe-machinima-testing');
 suite('machinima-testing example suite', function () {
   setup(function (done) {
     /* inject the scene html into the testing docoument */
-    machinima.setup('scene.html');
+    machinima.setupScene('scene.html');
     this.scene = document.querySelector('a-scene');
     this.scene.addEventListener('loaded', e => {
       done();
