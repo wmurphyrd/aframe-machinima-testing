@@ -1,6 +1,10 @@
 <html>
   <head>
     <script src="build.js"></script>
+    <!--
+      don't include other script links here because they will not be
+      available in the test environment. require() them in ../main.js instead
+    -->
   </head>
   <body>
     <a-scene avatar-recorder="localStorage: false">

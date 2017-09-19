@@ -35,7 +35,7 @@ const machinima = {
   testEnd: function (callback) {
     document.querySelector('a-scene')
         .addEventListener('replayingstopped', callback, { once: true });
-        // set event callback with 'once' flag due to multiple event emmisions
+        // set event callback with 'once' flag due to multiple event emissions
   },
   teardownReplayer: function () {
     var replayer = document.querySelector('a-scene') &&
