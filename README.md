@@ -18,12 +18,10 @@ npm install --save-dev aframe-machinima-testing
 There is a long list of peer dependencies including
 [aframe-motion-capture-components](https://github.com/dmarcos/aframe-motion-capture-components)
 and all the pieces for Karma-Mocha-Chai testing. The install command below
-will get you up
-to speed, including the correct versions in a couple of cases with compatibility
-issues.
+will get you up to speed with compatible versions of each.
 
 ```bash
-npm install --save-dev  aframe-motion-capture-components@0.1.6 chai karma karma-browserify karma-chrome-launcher karma-firefox-launcher karma-html2js-preprocessor karma-mocha karma-mocha-reporter karma-sinon-chai mocha sinon@^2.1.0 sinon-chai
+npm install --save-dev  aframe-motion-capture-components@0.1.6 chai@^4.1.2 karma@^1.7.1 karma-browserify@^5.1.1 karma-chrome-launcher@^2.2.0 karma-firefox-launcher@^1.0.1 karma-html2js-preprocessor@^1.1.0 karma-mocha@^1.3.0 karma-mocha-reporter@^2.2.4 karma-sinon-chai@^1.3.2 mocha@^3.5.3 sinon@^2.1.0 sinon-chai@^2.13.0
 ```
 
 ## Usage: Workflow
