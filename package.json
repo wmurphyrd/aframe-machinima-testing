@@ -25,7 +25,7 @@
   "homepage": "https://github.com/wmurphyrd/aframe-machinima-testing#readme",
   "peerDependencies": {
     "aframe": ">=0.6.0",
-    "aframe-motion-capture-components": "0.1.6",
+    "aframe-motion-capture-components": "git+https://git@github.com/wmurphyrd/aframe-motion-capture-components.git#v0.2.8a",
     "browserify": "^13.0.0",
     "budo": "^8.2.2",
     "chai": "^4.1.2",
