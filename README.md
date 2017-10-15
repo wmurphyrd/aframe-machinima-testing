@@ -21,8 +21,11 @@ and all the pieces for Karma-Mocha-Chai testing. The install command below
 will get you up to speed with compatible versions of each.
 
 ```bash
-npm install --save-dev  aframe-motion-capture-components@git+https://git@github.com/wmurphyrd/aframe-motion-capture-components.git#v0.2.8a chai@^4.1.2 karma@^1.7.1 karma-browserify@^5.1.1 karma-chrome-launcher@^2.2.0 karma-firefox-launcher@^1.0.1 karma-html2js-preprocessor@^1.1.0 karma-mocha@^1.3.0 karma-mocha-reporter@^2.2.4 karma-sinon-chai@^1.3.2 mocha@^3.5.3 sinon@^2.1.0 sinon-chai@^2.13.0
+npm install --save-dev  aframe-motion-capture-components@git+https://git@github.com/wmurphyrd/aframe-motion-capture-components.git#v0.2.8a chai@^4.1.2 karma@^1.7.1 karma-browserify@^5.1.1 karma-chrome-launcher@^2.2.0 karma-firefox-launcher@^1.0.1 karma-html2js-preprocessor@^1.1.0 karma-mocha@^1.3.0 karma-mocha-reporter@2.1.0 karma-sinon-chai@^1.3.2 mocha@^3.5.3 sinon@^2.1.0 sinon-chai@^2.13.0
 ```
+
+Note: temporarily linking to a fork of the motion capture components until a patch
+lands in the next release.
 
 ## Usage: Workflow
 
