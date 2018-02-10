@@ -7,6 +7,11 @@ using motion-captured user input.
 
 ![Demo GIF](readme_files/attract.gif)
 
+This project is dedicated to the memory of Hugh Hancock, coiner of the
+term "machinima" and pioneer VR game developer.
+
+![Hugh Hancock Photo](readme_files/hugh_hancock.jpg)
+
 ## Installation
 
 Install from npm into your package:
