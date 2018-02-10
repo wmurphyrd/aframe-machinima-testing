@@ -5,7 +5,7 @@ const machinima = require('aframe-machinima-testing');
 suite('machinima-testing example suite', function () {
   setup(function (done) {
     /* inject the scene html into the testing docoument */
-    machinima.setupScene('scene.html');
+    machinima.setupScene(this, 'scene.html');
     this.scene = document.querySelector('a-scene');
     this.scene.addEventListener('loaded', e => {
       done();
@@ -26,7 +26,7 @@ suite('machinima-testing example suite', function () {
       this.boxEntity = document.querySelector('a-box');
     }
   );
-  // writing testes with the lower level functions
+  // writing tests with the lower level functions
   test('using lower level machinima testing functions', function (done) {
     var sphere = document.querySelector('a-sphere');
     machinima.testStart(this, 'base/recordings/recording.json');

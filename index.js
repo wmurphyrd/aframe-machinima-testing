@@ -14,7 +14,9 @@ function testFunctionFactory (machinima, recordingFile, postReplay, preReplay) {
   };
 }
 const machinima = {
-  setupScene: function (sceneFile) {
+  setupScene: function (testContext, sceneFile) {
+    // setup can exceed default 2000 ms timeout while loading scene
+    testContext.timeout(10000)
     const body = document.querySelector('body');
     if (!window.__html__[sceneFile]) {
       console.error('File ' + sceneFile + ' not found by html2js' +

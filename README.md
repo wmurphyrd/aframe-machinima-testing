@@ -104,7 +104,7 @@ Mocha test context, and objects added to `this` in `preReplay` will be
 available in `postReplay`.
 
 ```js
-machinima.setupScene(sceneFile)
+machinima.setupScene(testContext, sceneFile)
 ```
 
 Should be called inside each suite's `setup` call to inject the A-Frame
@@ -112,6 +112,7 @@ scene into the test document.
 
 | Argument | Description |
 | --- | --- |
+| testContext | Pass in the `this` object from your setup function |
 | sceneFile | String. Name of html file in the `machinima_tests/scenes/` folder and prepared by `karma-html2js-preprocessor` |
 
 ```js
@@ -119,7 +120,9 @@ machinima.teardownReplayer()
 ```
 
 Should be called inside the global or suite teardown call to help
-`avatar-replayer` clean-up.
+`avatar-replayer` clean-up. If you use the `machinima-boostrap` CLI,
+this will automatically be included in your global teardown and you do not
+need to include it in your testing suites.
 
 ### Lower-level API
 
