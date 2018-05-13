@@ -49,7 +49,7 @@ Once setup, the workflow is:
 1. Add HTML A-Frame scenes to `machinima_tests/scenes`
 2. Use the `npm run record:machinima` command to load the scenes and
    record motion-captured user actions
-3. Save the recordings in recordings in `machinima_tests/recordings`
+3. Save the recordings in `machinima_tests/recordings`
 3. Create tests in `machinima_tests/tests` that replay the recordings in the
    scenes and run assertions on the resulting state
 5. Use the `npm run test:machinima` command to run the tests
